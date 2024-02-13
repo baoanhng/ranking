@@ -1,0 +1,30 @@
+.category {
+    margin-top: 50px;
+    padding: 0 0 5rem;
+    h1 {
+        font-weight: 800;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Playfair Display';
+        background: -webkit-linear-gradient(to right, #0f83db 0%, #ff4b0a 100%);
+        background: -moz-linear-gradient(to right, #0f83db 0%, #ff4b0a 100%);
+        background: linear-gradient(to right, #0f83db 0%, #ff4b0a 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p {
+        width: min(800px, 100%);
+        margin: 0 auto;
+        text-align: justify;
+        font-weight: 300;
+        color: #000000a3;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .category {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.categoryVote {
+    // overflow: hidden;
+    position: relative;
+    padding-bottom: 0 !important;
+    margin-bottom: 20rem !important;
+    .sectionTitleContent {
+        text-align: right;
+    }
+    .categoryContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        .categoryImg {
+            width: 40%;
+            position: relative;
+            #haruhi {
+                width: 70%;
+                position: absolute;
+                top: -30%;
+            }
+        }
+        .categoryText {
+            width: 60%;
+            .categoryItem {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 1rem;
+                .categoryIndex {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10px 0 0 10px;
+                    width: 70px;
+                    height: 70px;
+                    background-color: #fa7667;
+                    color: azure;
+                    font-size: 2.7rem;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                }
+                .categoryName {
+                    border: 1px solid salmon;
+                    border-radius: 15px;
+                    background-color: #fff7f8;
+                    width: 100%;
+                    p {
+                        text-transform: uppercase;
+                        font-size: 3rem;
+                        font-family: 'Phudu';
+                        letter-spacing: 1px;
+                        color: #ab1909dc;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .categoryVote {
+        .categoryContainer {
+            justify-content: center;
+            .categoryImg {
+                display: none;
+            }
+            .categoryText {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .categoryVote {
+        .categoryContainer {
+            .categoryText {
+                .categoryItem {
+                    .categoryIndex {
+                        width: 10vw;
+                        height: 10vw;
+                        font-size: 4vw;
+                    }
+                    .categoryName {
+                        p {
+                            font-size: 4vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.lastTop10 {
+    overflow-x: hidden;
+    padding-bottom: 10rem;
+    .container {
+        width: 4500px;
+        display: flex;
+        gap: 30px;
+        padding-left: 3rem;
+        .panel {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+            .panelRank {
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 25%;
+                    display: block;
+                    margin: 0 auto;
+                }
+                span {
+                    margin-top: 20px;
+                    font-weight: 900;
+                    font-size: 3.5rem;
+                    background: -webkit-linear-gradient(to right, #0f83db 0%, #ff4b0a 100%);
+                    background: -moz-linear-gradient(to right, #0f83db 0%, #ff4b0a 100%);
+                    background: linear-gradient(to right, #0f83db 0%, #ff4b0a 100%);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            .panelCover {
+                height: 570px;
+                border-radius: 15px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            }
+        }
+    }
+
+    .top10Header {
+        text-align: center;
+        color: var(--color-black);
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        scroll-margin-top: 5rem;
+        h1 {
+            font-family: 'Lexend', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            border-bottom: 1px solid #fa7667;
+            line-height: 0.1em;
+            span {
+                background: #fa7667;
+                border-radius: 10px;
+                color: aliceblue;
+                padding: 10px 20px;
+            }
+        }
+        p {
+            margin-top: 40px;
+            font-family: 'Lexend', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: var(--color-gray);
+            strong {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .lastTop10 {
+        .container {
+            width: 2900px !important;
+            .panel {
+                .panelCover {
+                    height: 350px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .top10Header {
+        width: 90% !important;
+        h1 {
+            font-size: 3rem !important;
+        }
+        p {
+            font-size: 1.4rem !important;
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .top10Header {
+        h1 {
+            font-size: 2.5rem !important;
+        }
+    }
+}

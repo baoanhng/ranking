@@ -1,0 +1,148 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Estonia&display=swap');
+
+:root {
+    --color-black: #181123;
+    --color-gray: rgba(34, 34, 34, 0.6);
+    --color-background: #ffffff;
+    --color-azure: #f2f5f8;
+    --color-quote: #f8d8e2;
+    --color-answer-border: rgb(216, 215, 215);
+    --color-question: rgb(79, 76, 76);
+    --color-answer-hover-bg: rgb(248, 245, 241);
+    --color-answer-hover-border: rgb(245, 152, 152);
+    --color-answer-hover-right-bg: rgb(213 255 200);
+    --color-answer-hover-right-border: rgb(64 197 69);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Lexend';
+    font-weight: 200;
+    text-rendering: optimizeSpeed;
+    margin: 0 !important;
+}
+
+@font-face {
+    font-family: 'Phudu';
+    src: local('DT Phudu Black'), url('../../fonts/DTPhudu-Black.otf') format('opentype');
+}
+
+/* Start scrollbar-------------------------------------- */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: antiquewhite;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #cdf7ff;
+}
+/* End scrollbar------------------------------------------ */
+
+.contentContainer {
+    background-image: url(../../assets/sakura_circle.svg);
+    background-repeat: no-repeat;
+    background-color: #fff7f8;
+    background-size: 50%;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 200;
+    overflow: hidden;
+    img {
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .wrapper {
+        max-width: 1200px;
+        padding: 10rem 2rem 20rem;
+        margin: 0 auto;
+    }
+}
+
+.voteContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 2rem;
+    background-color: var(--color-background);
+    position: relative;
+    #btnPrev,
+    #btnNext {
+        cursor: pointer;
+        font-size: 2rem;
+        border-radius: 50%;
+        padding: 10px 13px;
+        position: absolute;
+        border: none;
+        svg {
+            width: 20px;
+            transform: translateY(2px);
+            color: aliceblue;
+        }
+        top: 15px;
+        background-color: #404660;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+    #btnPrev {
+        left: 15px;
+    }
+    #btnNext {
+        right: 15px;
+    }
+    #toTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 2rem;
+        border-radius: 50%;
+        padding: 10px 13px;
+        background-color: #869dff;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        border: none;
+        opacity: 0.3;
+        svg {
+            width: 30px;
+            transform: translateY(2px);
+            color: aliceblue;
+        }
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+    .inactivate {
+        opacity: 0.3;
+        pointer-events: none;
+        cursor: default;
+    }
+}

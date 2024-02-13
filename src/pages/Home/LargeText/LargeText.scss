@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+.largeText {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    padding: 10rem 0 10rem !important;
+    margin-top: 7vw;
+    img {
+        position: absolute;
+        width: 13%;
+        top: -14%;
+        left: 10%;
+        z-index: 10;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        .text {
+            font-size: 9vw;
+            font-weight: 900;
+            font-family: 'Poppins';
+            text-transform: uppercase;
+            letter-spacing: -0.01em;
+            line-height: 80%;
+            margin: 0;
+            width: 100%;
+            color: rgba(182, 182, 182, 0);
+            background: -webkit-linear-gradient(45deg, #a875ec 20%, #ff6b7c 100%) no-repeat;
+            background: -moz-linear-gradient(45deg, #a875ec 20%, #ff6b7c 100%) no-repeat;
+            background: linear-gradient(45deg, #a875ec 20%, #ff6b7c 100%) no-repeat;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-size: 0%;
+            transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            -webkit-text-stroke: 2px rgba(0, 0, 0, 0.199);
+            span {
+                font-size: 6vw;
+                position: absolute;
+                font-family: 'Lexend';
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+                color: #fbc638;
+                clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+                transform-origin: center;
+                transition: all cubic-bezier(0.1, 0.5, 0.5, 1) 0.4s;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                -webkit-text-stroke: 2px rgba(0, 0, 0, 0.199);
+            }
+            &:hover {
+                background: -webkit-linear-gradient(45deg, #f8dc3a 20%, #ff6b7c 100%) no-repeat;
+                background: -moz-linear-gradient(45deg, #f8dc3a 20%, #ff6b7c 100%) no-repeat;
+                background: linear-gradient(45deg, #f8dc3a 20%, #ff6b7c 100%) no-repeat;
+                -webkit-background-clip: text;
+                background-clip: text;
+                //     span {
+                //         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                //     }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .largeText {
+        img {
+            top: -8%;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .largeText {
+        img {
+            top: -2%;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .largeText {
+        padding: 5rem 0 0rem;
+        width: 100%;
+        img {
+            left: 5%;
+        }
+        .container {
+            .text {
+                font-size: 13vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .largeText {
+        img {
+            top: 3%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .largeText {
+        img {
+            top: 9%;
+        }
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .largeText {
+        img {
+            top: 13%;
+        }
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .largeText {
+        img {
+            top: 18%;
+        }
+    }
+}

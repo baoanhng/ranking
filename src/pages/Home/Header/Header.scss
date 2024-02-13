@@ -1,0 +1,252 @@
+.header {
+    padding-bottom: 5vw;
+    background-color: #fff7f8;
+    .headerContent {
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        width: 96%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 8px, rgba(0, 0, 0, 0.1) 0px -2px 5px;
+        border-radius: 20px;
+        margin: 2%;
+        overflow: hidden;
+        background-color: #fff7f8;
+        background-image: url(../../../assets/sakura_circle.svg);
+        background-repeat: no-repeat;
+        background-size: 65%;
+        .textContent {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            padding-left: 2vw;
+            .textTitle {
+                h1 {
+                    font-family: 'Phudu';
+                    font-weight: 900;
+                    font-size: 6vw;
+                    letter-spacing: 2px;
+                    line-height: 5.6vw;
+                    #text01 {
+                        padding-top: 20px;
+                        background-image: linear-gradient(90deg, #ff9a8b 0%, #ff6a88 55%, #ff99ac 100%);
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                    #text02 {
+                        background-image: linear-gradient(90deg, #ff9a8b 0%, #ff6a88 55%, #ff99ac 100%);
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                    #text03 {
+                        background-image: linear-gradient(
+                            to right,
+                            #b8cbb8 0%,
+                            #b8cbb8 0%,
+                            #b465da 0%,
+                            #cf6cc9 33%,
+                            #ee609c 66%,
+                            #ee609c 100%
+                        );
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        transition: all;
+                        background-size: 200% 200%;
+                        animation: gradient 2s infinite linear;
+                    }
+                    @keyframes gradient {
+                        0% {
+                            background-position: 0% 50%;
+                        }
+                        50% {
+                            background-position: 100% 50%;
+                        }
+                        100% {
+                            background-position: 0% 50%;
+                        }
+                    }
+                }
+                img {
+                    width: 10%;
+                    position: absolute;
+                }
+                #rotSakura1 {
+                    top: 22%;
+                    left: 35%;
+                    z-index: -1;
+                    animation: spin 8s infinite linear;
+                }
+                #rotSakura2 {
+                    width: 8%;
+                    top: 34%;
+                    left: 26.5%;
+                    z-index: -1;
+                    animation: spin 3s infinite linear;
+                }
+            }
+            p {
+                font-weight: 200;
+                font-size: 1.1vw;
+                color: rgb(78, 78, 78);
+                padding-bottom: 5%;
+                text-align: justify;
+                width: 70%;
+            }
+            #textBtn {
+                padding-bottom: 8%;
+                #votebtn {
+                    font-family: 'Phudu';
+                    text-decoration: none;
+                    font-weight: 900;
+                    font-size: 1.7vw;
+                    text-transform: uppercase;
+                    display: flex;
+                    gap: 1%;
+                    justify-content: space-around;
+                    align-items: center;
+                    border: 2px solid salmon;
+                    border-radius: 15px;
+                    padding: 10px 20px;
+                    width: 30%;
+                    transition: all 0.5s ease-in-out;
+                    span {
+                        color: #fa7667;
+                        line-height: 3vw;
+                        letter-spacing: 1px;
+                    }
+                    img {
+                        width: 15%;
+                        animation: spin 4s infinite linear;
+                    }
+                    &:hover {
+                        background-color: #f8c5c5a6;
+                        span {
+                            color: rgb(191 59 59);
+                        }
+                    }
+                }
+            }
+        }
+        .imgContent {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                margin-left: -8vw;
+                width: 110%;
+                animation: vertically 5s infinite ease-in-out;
+            }
+        }
+    }
+    #headerFilter {
+        pointer-events: none;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes vertically {
+    0% {
+        -moz-transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    50% {
+        -moz-transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    100% {
+        -moz-transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        .headerContent {
+            .textContent {
+                p {
+                    font-size: 1.5vw;
+                }
+                .textTitle {
+                    #rotSakura1 {
+                        top: 18%;
+                        left: 37%;
+                    }
+                    #rotSakura2 {
+                        top: 28%;
+                        left: 28%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        .headerContent {
+            position: relative;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            background-size: 130%;
+            background-position: center -10%;
+            .textContent {
+                width: 100%;
+                display: block;
+                .textTitle {
+                    h1 {
+                        text-align: center;
+                        font-size: 12vw;
+                        line-height: 11vw;
+                    }
+                    #rotSakura1 {
+                        top: 58%;
+                        left: 85%;
+                        z-index: 1;
+                    }
+                    #rotSakura2 {
+                        width: 12%;
+                        top: 63.5%;
+                        left: 13%;
+                        z-index: 1;
+                    }
+                }
+                p {
+                    margin: 0 auto;
+                    font-size: 2.5vw;
+                    width: 90%;
+                }
+                #textBtn {
+                    #votebtn {
+                        margin: 0 auto;
+                        font-size: 4vw;
+                        width: 40%;
+                        padding: 15px;
+                    }
+                }
+            }
+            .imgContent {
+                width: 80%;
+                img {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,143 @@
+.mostFavoriteLN {
+    min-height: 100vh !important;
+    padding-bottom: 15rem;
+    .functionContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        padding: 0 0 5rem;
+        input {
+            background-image: url(../../../assets/search_icon.svg);
+            background-size: 15px;
+            background-position: 13px center;
+            background-repeat: no-repeat;
+            caret-color: rgb(73, 74, 75);
+            width: min(500px, 95%);
+            font-family: 'Lexend';
+            font-size: 1.5rem;
+            font-weight: 300;
+            padding: 15px 15px 15px 40px;
+            border-radius: 10px;
+            border: none;
+            background-color: var(--color-azure);
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            &:focus {
+                outline: none;
+            }
+        }
+        button {
+            font-family: 'Lexend';
+            font-size: 1.5rem;
+            font-weight: 300;
+            padding: 15px;
+            border-radius: 10px;
+            width: 160px;
+            cursor: pointer;
+            border: none;
+            background-color: #404660;
+            color: aliceblue;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+    }
+    .mostFavoriteLNList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 2rem;
+        .lnItem {
+            position: relative;
+            max-width: 250px;
+            background-color: var(--color-azure);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+            transform: translateZ(0);
+            &:hover {
+                transform: translate3d(0px, -0.5rem, 0px);
+                box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.4);
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+            .info {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 0 10px;
+                gap: 25px;
+                h4 {
+                    color: rgb(109 99 99);
+                    margin: 0;
+                    padding-top: 8px;
+                }
+                p {
+                    margin-top: -10px;
+                    font-size: 1.4rem;
+                }
+            }
+            .lnID {
+                position: absolute;
+                top: 1%;
+                left: 3%;
+                font-size: 1.4rem;
+                font-weight: 600;
+                background: var(--color-azure);
+                border-radius: 25%;
+                padding: 1px 5px;
+                text-align: center;
+            }
+            svg {
+                width: 30px;
+                position: absolute;
+                top: 1%;
+                right: 3%;
+                color: rgb(17 147 21);
+                background-color: azure;
+                border-radius: 50%;
+                display: none;
+            }
+        }
+        .lnChosen {
+            border: 2px solid rgb(64 197 69);
+            background-color: rgb(213 255 200);
+            .info {
+                h4 {
+                    color: rgb(17 147 21);
+                }
+            }
+            svg {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .mostFavoriteLN {
+        .functionContainer {
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .mostFavoriteLNList {
+            gap: 1rem;
+            .lnItem {
+                max-width: 150px;
+                .info {
+                    gap: 15px;
+                    h4 {
+                        font-size: 1.4rem;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.sectionTitle {
+    .sectionTitleContent {
+        color: var(--color-black);
+        margin: 0 auto;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        scroll-margin-top: 5rem;
+        h1 {
+            font-family: 'Lexend', sans-serif;
+            font-size: 3rem;
+            font-weight: 900;
+            border-bottom: 2px solid salmon;
+            line-height: 0.1em;
+            span {
+                color: #fa7667;
+                background: #fff7f8;
+                padding: 5px 20px;
+                border: 2px solid salmon;
+                border-radius: 10px;
+            }
+        }
+        p {
+            padding-top: 15px;
+            margin-top: 10px;
+            font-family: 'Lexend', sans-serif;
+            font-size: 1.7rem;
+            font-weight: 300;
+            color: var(--color-gray);
+        }
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .sectionTitleContent {
+        h1 {
+            font-size: 2.6rem !important;
+        }
+        p {
+            font-size: 1.4rem !important;
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .sectionTitleContent {
+        h1 {
+            font-size: 2.3rem !important;
+        }
+        p {
+            font-size: 1.3rem !important;
+        }
+    }
+}

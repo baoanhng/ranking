@@ -1,0 +1,38 @@
+.footer {
+    padding-top: 10rem;
+    div {
+        text-align: center;
+        img {
+            width: 350px;
+            height: auto;
+            display: block;
+            margin: auto;
+            padding: 5rem 0;
+        }
+        p {
+            font-weight: 300;
+            font-size: 1.6rem;
+            color: rgb(151, 151, 151);
+            width: min (1200px, 95%);
+            margin: 0 auto;
+            padding-bottom: 2rem;
+            strong {
+                cursor: pointer;
+                &:hover {
+                    color: salmon;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .footer {
+        img {
+            width: 200px !important;
+        }
+        p {
+            font-size: 1.3rem !important;
+        }
+    }
+}

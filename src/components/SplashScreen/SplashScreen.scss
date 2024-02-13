@@ -1,0 +1,74 @@
+.splashScreen {
+    overflow: hidden;
+    z-index: 480;
+    position: fixed;
+    width: 100%;
+    .splashTextBG {
+        overflow: hidden;
+        position: absolute;
+        z-index: 49;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 100vh;
+        font-family: 'Phudu';
+        font-size: 9.5vw;
+        letter-spacing: 1px;
+        font-weight: 900;
+        text-transform: uppercase;
+        .left {
+            width: 50%;
+            min-height: 100vh;
+            // background: url(../../assets/left.png) no-repeat right center;
+            // background-size: auto 150%;
+            background-color: black;
+            transition: all ease-in-out 0.5s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: rgb(204, 57, 57);
+            text-align: right;
+            line-height: 90%;
+        }
+        .right {
+            width: 50%;
+            min-height: 100vh;
+            // background: url(../../assets/right.png) no-repeat left center;
+            // background-size: auto 150%;
+            background-color: rgb(204, 57, 57);
+            transition: all ease-in-out 0.5s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: black;
+            text-align: left;
+            line-height: 90%;
+        }
+    }
+    .splashText {
+        background-color: var(--color-black);
+        position: relative;
+        z-index: 50;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 100vh;
+        transition: all ease-in-out 0.5s;
+        span {
+            display: block;
+            color: azure;
+            text-align: center;
+            font-family: 'Lexend';
+            font-size: 6vw;
+            margin-bottom: -3.5%;
+            font-weight: 900;
+            background: linear-gradient(45deg, #a875ec 20%, #ff6b7c 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.5));
+            transform: rotate(-7deg);
+        }
+    }
+}

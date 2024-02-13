@@ -1,0 +1,93 @@
+.comment {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 0;
+    padding: 10rem 0 20rem;
+    .sectionTitle {
+        padding: 0 2rem;
+    }
+    .swiper {
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        width: 400px;
+        height: 400px;
+        // Border radius for gradient
+        background: linear-gradient(#fff2f2 0 0) padding-box,
+            linear-gradient(to bottom, transparent, #fa7667) border-box;
+        border: 1px solid transparent;
+
+        padding: 30px 3% 20px;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: rgb(79, 76, 76);
+        .swiper-slide-shadow-right,
+        .swiper-slide-shadow-left {
+            border-radius: 20px;
+        }
+        .swiper-slide-shadow-right {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0));
+        }
+        .swiper-slide-shadow-left {
+            background-image: linear-gradient(to left, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0));
+        }
+        .avatar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                z-index: 100;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                border: 3px solid var(--color-azure);
+                position: absolute;
+                top: -10%;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                opacity: 1;
+            }
+            p {
+                padding-top: 1rem;
+            }
+        }
+        .content {
+            font-family: 'Playfair Display';
+            margin: -9% 0 -3%;
+            font-size: 2.5rem;
+            &::before {
+                content: open-quote;
+            }
+            &::after {
+                content: close-quote;
+            }
+        }
+        .author {
+            font-weight: 400;
+            font-size: 1.7rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .comment {
+        .swiper-slide {
+            width: 300px;
+            height: 300px;
+            .content {
+                font-size: 1.7rem;
+            }
+            .author {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
