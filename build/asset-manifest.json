@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d1745e0d.css",
+    "main.js": "/static/js/main.68f6cf6c.js",
+    "static/js/787.e12ce889.chunk.js": "/static/js/787.e12ce889.chunk.js",
+    "static/media/headerimg.webp": "/static/media/headerimg.f859c25988ebf6efd3ed.webp",
+    "static/media/tsurekano.webp": "/static/media/tsurekano.f3bd91848ca88329e572.webp",
+    "static/media/voteHalu.webp": "/static/media/voteHalu.f1f3a2b5f8ef76ae62d6.webp",
+    "static/media/nonoa_chibi.png": "/static/media/nonoa_chibi.bdd417f2a7fe7934f758.png",
+    "static/media/haruhi.webp": "/static/media/haruhi.975f9694269a0d11d4a4.webp",
+    "static/media/DTPhudu-Black.otf": "/static/media/DTPhudu-Black.5647d28f063256d66920.otf",
+    "static/media/silver.png": "/static/media/silver.e7caa6f6ae436074e39e.png",
+    "static/media/bronze.png": "/static/media/bronze.00fbbd6dbc27db605e1d.png",
+    "static/media/gold.png": "/static/media/gold.99730607c983902e5bc1.png",
+    "static/media/signature.png": "/static/media/signature.75965ff5edede015b870.png",
+    "static/media/sakura1.svg": "/static/media/sakura1.59e3d3c5ec68bfcec9d51e91ffb0d251.svg",
+    "static/media/sakura_circle.svg": "/static/media/sakura_circle.4e91c906ea419b55b89f.svg",
+    "index.html": "/index.html",
+    "static/media/sakura2.svg": "/static/media/sakura2.f702fb35e6b6205c6510e9d0e4bae4da.svg",
+    "static/media/search_icon.svg": "/static/media/search_icon.39a84c942a24cfe899a0.svg",
+    "main.d1745e0d.css.map": "/static/css/main.d1745e0d.css.map",
+    "main.68f6cf6c.js.map": "/static/js/main.68f6cf6c.js.map",
+    "787.e12ce889.chunk.js.map": "/static/js/787.e12ce889.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1745e0d.css",
+    "static/js/main.68f6cf6c.js"
+  ]
+}
